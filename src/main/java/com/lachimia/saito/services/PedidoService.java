@@ -16,19 +16,19 @@ public class PedidoService {
         return pedidoRepository.findAll();
     }
 
-    public PedidoModel criarLivro(PedidoModel livroModel){
+    public PedidoModel criarPedido(PedidoModel livroModel){
         return pedidoRepository.save(livroModel);
     }
 
-    public PedidoModel listarLivro(Long id){
+    public PedidoModel listarPedido(Long id){
         return pedidoRepository.findById(id).get();
     }
 
-    public Optional<PedidoModel> buscarLivro(Long id){
+    public Optional<PedidoModel> buscarPedido(Long id){
         return pedidoRepository.findById(id);
     }
 
-    public void deletarLivro(Long id){
+    public void deltarPedido(Long id){
         pedidoRepository.deleteById(id);
     }
 }
