@@ -19,6 +19,7 @@ public class PedidoModel {
     @Column(name = "Valor Total do Pedido")
     private BigDecimal valorTotal;
 
+
     @Column(name = "Status do Pedido")
     private String status;
 
